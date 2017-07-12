@@ -150,6 +150,7 @@
     var learnMore = document.createElement('a');
     learnMore.setAttribute('href', 'https://www.battleforthenet.com/#widget-learn-more');
     learnMore.setAttribute('target', '_blank');
+    learnMore.setAttribute('rel', 'noopener noreferrer');
     learnMore.textContent = 'Learn more.';
     bodyFragment.appendChild(learnMore);
 
@@ -174,6 +175,7 @@
     var orgLink = document.createElement('a');
     orgLink.setAttribute('href', org.url);
     orgLink.setAttribute('target', '_blank');
+    orgLink.setAttribute('rel', 'noopener noreferrer');
     orgLink.textContent = org.name;
     fragment.appendChild(orgLink);
 
