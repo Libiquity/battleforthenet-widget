@@ -60,7 +60,7 @@
       },
       'fp': {
         code: 'fp',
-        name: 'Free Press',
+        name: 'Free Press Action Fund',
         url: 'https://www.freepress.net/',
         donate: 'https://freepress.actionkit.com/donate/single/'
       },
@@ -186,7 +186,7 @@
     document.getElementById('rotation').appendChild(fragment);
 
     var donate = document.getElementById('donate');
-    if (org.donate) donate.setAttribute('href', org.donate);
+    if (donate && org.donate) donate.setAttribute('href', org.donate);
   }
 
   function addCloseListeners() {

@@ -121,7 +121,7 @@
       d.setTime(d.getTime()+(exdays*24*60*60*1000));
 
       var expires = "expires="+d.toGMTString();
-      document.cookie = name + "=" + val + "; " + expires;
+      document.cookie = name + "=" + val + "; " + expires + "; path=/";
     },
 
     getCookie: function(cname) {
@@ -188,7 +188,7 @@
 
     _bftn_util.setCookie('_BFTN_WIDGET_SHOWN', 'true', 365);
 
-    _bftn_util.injectCSS('_bftn_iframe_css', '#_bftn_wrapper { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 20000; -webkit-overflow-scrolling: touch; overflow-y: scroll; } #_bftn_iframe { width: 100%; height: 100%;  }');
+    _bftn_util.injectCSS('_bftn_iframe_css', '#_bftn_wrapper { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 20000; -webkit-overflow-scrolling: touch; overflow-y: auto; } #_bftn_iframe { width: 100%; height: 100%;  }');
 
     // Preload images before showing the animation
     // preload();
